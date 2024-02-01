@@ -20,56 +20,55 @@
 
 <div class="container">
     <div class="columns">
-        <div class="column is-half">
+        <div class="column is-half is-offset-one-quarter">
             <div class="card">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                </div>
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Ping Pong Score Keeper
+                    </p>
+                    <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </header>
                 <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">John Smith</p>
-                            <p class="subtitle is-6">@johnsmith</p>
-                        </div>
-                    </div>
-
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
-                        <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <h1 title="is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                    </div>
+                    <p class="subtitle">Use the buttons below to keep score</p>
+                    <div class="select rounded">
+                        <select name="" id="playTo">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+
+                        </select>
                     </div>
                 </div>
+                <footer class="card-footer">
+                    <button id="p1Button" class="is-primary button card-footer-item">+1 Player One</button>
+                    <button id="p2Button" class="is-info button card-footer-item">+2 Player One</button>
+                    <button id="reset" class="is-danger button card-footer-item">Reset</button>
+
+                </footer>
             </div>
         </div>
     </div>
 </div>
+</div>
+</div>
 
 
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
 
-    <select name="" id="playTo">
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+1 Player Two</button>
-    <button id="reset">Reset</button>
+
 
 
 
